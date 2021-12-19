@@ -13,8 +13,9 @@ fi
 
 export AWS_VAULT_KEYCHAIN_NAME=login
 
-if test $(which starship); then
-eval "$(starship init zsh)"
+if type starship &>/dev/null
+then
+  eval "$(starship init zsh)"
 fi
 
 
