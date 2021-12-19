@@ -8,4 +8,6 @@ These dotfiles are hugely influenced by @driesvints [dotfiles](https://github.co
 
 - Clone this repo to `~/.dotfiles`
 - Run `install.sh` to start the installation
+- Set zsh as your default shell: `chsh -s $(which zsh)`
+- Reload your environent with `source ~/.zshrc`
 
