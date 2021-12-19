@@ -9,6 +9,12 @@ if test "$(uname)" = "Darwin"; then
   echo "--Installation of brew formulae DONE"
 fi
 
+if test "$(uname)" = "Linux"; then
+  echo "--Install apt-get packages on Linux"
+  ./apt-get.sh
+  echo "--Installation of apt-get package on Linux DONE"
+fi
+
 # Symlink dotfiles
 echo "--Symlink dotfiles"
 ln -sf ${PWD}/.gitconfig ~/.gitconfig
