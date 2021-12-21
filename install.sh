@@ -18,7 +18,7 @@ fi
 # Symlink dotfiles
 echo "--Symlink dotfiles"
 ln -sf ${PWD}/.gitconfig ~/.gitconfig
-ln -sf ${PWD}/.site-functions ~/.site-functions
+ln -shF ${PWD}/.site-functions/ ~/.site-functions
 ln -sf ${PWD}/.zshrc ~/.zshrc
 ln -sf ${PWD}/.gitignore_global ~/.gitignore
 echo "--Symlinking of dotfiles DONE"
