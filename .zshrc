@@ -1,15 +1,12 @@
-
-
-
-
-
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-  autoload -Uz compinit
-  compinit
 fi
+
+FPATH="${HOME}/.site-functions:${FPATH}"
+
+autoload -Uz compinit
+compinit
 
 export AWS_VAULT_KEYCHAIN_NAME=login
 
@@ -17,9 +14,6 @@ if type starship &>/dev/null
 then
   eval "$(starship init zsh)"
 fi
-
-
-eval "$(cat $HOME/.site-functions/aws-vault)"
 
 export PATH=$PATH:$HOME/bin
 alias l="exa"
