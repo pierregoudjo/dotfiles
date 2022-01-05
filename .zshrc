@@ -25,3 +25,4 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 
 
+function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
