@@ -6,8 +6,8 @@
 [user]
 	name = Pierre GOUDJO
 	email = 1331326+pierregoudjo@users.noreply.github.com
-[merge]
-	ff = only
+#[merge]
+#	ff = only
 [fetch]
 	prune = true
 [diff]
