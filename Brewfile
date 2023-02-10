@@ -73,7 +73,6 @@ cask "amazon-chime"
 cask "amazon-music"
 cask "authy"
 cask "bitwarden"
-cask "cheatsheet"
 cask "dash"
 cask "docker"
 cask "dotnet-sdk"
@@ -110,4 +109,3 @@ mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Structured", id: 1499198946
 mas "Vinegar", id: 1591303229
-mas "Remember: Quick Reminders", id: 1493354028
