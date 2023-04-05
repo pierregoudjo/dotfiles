@@ -24,6 +24,8 @@ ln -sf ${PWD}/.gitignore_global ~/.gitignore
 ln -sf ${PWD}/starship/starship.toml ~/.config/starship.toml
 ln -shF ${PWD}/.site-functions/ ~/.site-functions
 ln -shF ${PWD}/gh/ ~/.config/gh
+ln -shF ${PWD}/alacritty ~/.config/alacritty
+ln -shF ${PWD}/zellij ~/.config/zellij
 
 echo "--Symlinking of dotfiles DONE"
 
