@@ -26,6 +26,11 @@ ln -shF ${PWD}/.site-functions/ ~/.site-functions
 ln -shF ${PWD}/gh/ ~/.config/gh
 ln -shF ${PWD}/alacritty ~/.config/alacritty
 ln -shF ${PWD}/zellij ~/.config/zellij
+ln -sf ${PWD}/.terraformrc ~/.terraformrc
 
 echo "--Symlinking of dotfiles DONE"
 
+# Create some required directories
+echo "--Bootstraping some required directories"
+mkdir -p ~/.terraform.d/plugin-cache
+echo "--Bootstraping some required directories DONE"
