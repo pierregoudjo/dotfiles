@@ -30,6 +30,7 @@ export BAT_THEME="ansi"
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
+function my-public-ip { dig +short txt ch whoami.cloudflare @1.0.0.1 | jq -r}
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 
