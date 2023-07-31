@@ -1,0 +1,17 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alabaster Color Scheme",
+		"Clojure Sublimed",
+		"LSP",
+		"LSP-terraform",
+		"Package Control",
+		"paredit",
+		"Terminus",
+		"Terraform",
+	],
+}

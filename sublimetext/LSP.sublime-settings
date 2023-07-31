@@ -1,0 +1,11 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+	"clients": {
+		"clojure-lsp": {
+			"enabled": true,
+			"command": ["/usr/local/bin/clojure-lsp"],
+			"selector": "source.clojure",
+			"initializationOptions": {}
+		}
+	}
+}
