@@ -15,6 +15,15 @@ if test "$(uname)" = "Linux"; then
   echo "--Installation of apt-get package on Linux DONE"
 fi
 
+# Create profile to integrate with Homebrew
+if test "$(uname)" = "Darwin"; then
+  echo "---Create/update .zprofile file"
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > /Users/pierre/.zprofile
+fi
+
+# Create config directory
+echo "---Create .config directory if it doesn't exist"
+mkdir -p ~/.config
 # Symlink dotfiles
 echo "--Symlink dotfiles"
 ln -sf ${PWD}/.gitconfig ~/.gitconfig
@@ -34,3 +43,4 @@ echo "--Symlinking of dotfiles DONE"
 echo "--Bootstraping some required directories"
 mkdir -p ~/.terraform.d/plugin-cache
 echo "--Bootstraping some required directories DONE"
+
