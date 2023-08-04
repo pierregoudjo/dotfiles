@@ -5,13 +5,14 @@
 	],
 	"installed_packages":
 	[
-		"Alabaster Color Scheme",
 		"Clojure Sublimed",
+		"DashDoc",
 		"LSP",
 		"LSP-terraform",
 		"Package Control",
-		"paredit",
+		"Profile Switcher",
 		"Terminus",
 		"Terraform",
+		"Writer Color Scheme",
 	],
 }

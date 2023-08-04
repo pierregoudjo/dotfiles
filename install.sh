@@ -37,6 +37,11 @@ ln -shF ${PWD}/alacritty ~/.config/alacritty
 ln -shF ${PWD}/zellij ~/.config/zellij
 ln -sf ${PWD}/.terraformrc ~/.terraformrc
 
+if test "$(uname)" = "Darwin"; then
+  mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/
+  ln -sf ${PWD}/sublimetext/User ~/Library/Application\ Support/Sublime\ Text/Packages/User
+fi
+
 echo "--Symlinking of dotfiles DONE"
 
 # Create some required directories
