@@ -18,7 +18,7 @@ fi
 # Create profile to integrate with Homebrew
 if test "$(uname)" = "Darwin"; then
   echo "---Create/update .zprofile file"
-  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > /Users/pierre/.zprofile
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
 fi
 
 # Create config directory
