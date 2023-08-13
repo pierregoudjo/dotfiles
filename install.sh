@@ -39,7 +39,7 @@ ln -sf ${PWD}/.terraformrc ~/.terraformrc
 
 if test "$(uname)" = "Darwin"; then
   mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/
-  ln -sf ${PWD}/sublimetext/User ~/Library/Application\ Support/Sublime\ Text/Packages/User
+  ln -sf ${PWD}/sublimetext/User ~/Library/Application\ Support/Sublime\ Text/Packages/
 fi
 
 echo "--Symlinking of dotfiles DONE"
