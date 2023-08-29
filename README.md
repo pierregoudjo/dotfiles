@@ -11,3 +11,6 @@ These dotfiles are hugely influenced by @driesvints [dotfiles](https://github.co
 - Set zsh as your default shell: `chsh -s $(which zsh)`
 - Reload your environent with `source ~/.zshrc`
 
+## Check the code
+
+See the [install.sh](install.sh)
