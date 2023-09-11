@@ -39,3 +39,5 @@ bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+eval "$(zoxide init zsh)"
