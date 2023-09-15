@@ -41,3 +41,5 @@ bindkey "^[[1;3D" backward-word
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 eval "$(zoxide init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
