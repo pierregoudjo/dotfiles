@@ -1,0 +1,3 @@
+[submodule "ssh-over-ssm"]
+	path = ssh-over-ssm
+	url = https://github.com/elpy1/ssh-over-ssm.git

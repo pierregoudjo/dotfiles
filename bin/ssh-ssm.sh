@@ -1,0 +1,1 @@
+../ssh-over-ssm/ssh-ssm.sh

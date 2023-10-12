@@ -26,16 +26,17 @@ echo "---Create .config directory if it doesn't exist"
 mkdir -p ~/.config
 # Symlink dotfiles
 echo "--Symlink dotfiles"
-ln -sf ${PWD}/.gitconfig ~/.gitconfig
-ln -sf ${PWD}/.zshrc ~/.zshrc
-ln -sf ${PWD}/.gitignore_global ~/.gitignore
-ln -sf ${PWD}/.gitignore_global ~/.gitignore
-ln -sf ${PWD}/starship/starship.toml ~/.config/starship.toml
+ln -shF ${PWD}/.gitconfig ~/.gitconfig
+ln -shF ${PWD}/.zshrc ~/.zshrc
+ln -shF ${PWD}/.gitignore_global ~/.gitignore
+ln -shF ${PWD}/.gitignore_global ~/.gitignore
+ln -shF ${PWD}/starship/starship.toml ~/.config/starship.toml
 ln -shF ${PWD}/.site-functions/ ~/.site-functions
 ln -shF ${PWD}/gh/ ~/.config/gh
 ln -shF ${PWD}/alacritty ~/.config/alacritty
 ln -shF ${PWD}/zellij ~/.config/zellij
-ln -sf ${PWD}/.terraformrc ~/.terraformrc
+ln -shF ${PWD}/.terraformrc ~/.terraformrc
+ln -shF ${PWD}/bin ~/bin
 
 if test "$(uname)" = "Darwin"; then
   mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/
