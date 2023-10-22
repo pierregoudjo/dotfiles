@@ -24,19 +24,21 @@ fi
 # Create config directory
 echo "---Create .config directory if it doesn't exist"
 mkdir -p ~/.config
+mkdir -p ~/.ssh
 # Symlink dotfiles
 echo "--Symlink dotfiles"
-ln -shF ${PWD}/.gitconfig ~/.gitconfig
-ln -shF ${PWD}/.zshrc ~/.zshrc
-ln -shF ${PWD}/.gitignore_global ~/.gitignore
-ln -shF ${PWD}/.gitignore_global ~/.gitignore
-ln -shF ${PWD}/starship/starship.toml ~/.config/starship.toml
-ln -shF ${PWD}/.site-functions/ ~/.site-functions
-ln -shF ${PWD}/gh/ ~/.config/gh
-ln -shF ${PWD}/alacritty ~/.config/alacritty
-ln -shF ${PWD}/zellij ~/.config/zellij
-ln -shF ${PWD}/.terraformrc ~/.terraformrc
-ln -shF ${PWD}/bin ~/bin
+ln -shFv ${PWD}/.gitconfig ~/.gitconfig
+ln -shFv ${PWD}/.zshrc ~/.zshrc
+ln -shFv ${PWD}/.gitignore_global ~/.gitignore
+ln -shFv ${PWD}/.gitignore_global ~/.gitignore
+ln -shFv ${PWD}/starship/starship.toml ~/.config/starship.toml
+ln -shFv ${PWD}/.site-functions/ ~/.site-functions
+ln -shFv ${PWD}/gh/ ~/.config/gh
+ln -shFv ${PWD}/alacritty ~/.config/alacritty
+ln -shFv ${PWD}/zellij ~/.config/zellij
+ln -shFv ${PWD}/.terraformrc ~/.terraformrc
+ln -shFv ${PWD}/bin ~/bin
+ln -shFv ${PWD}/.ssh/config ~/.ssh/config
 
 if test "$(uname)" = "Darwin"; then
   mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/
