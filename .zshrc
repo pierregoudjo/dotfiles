@@ -43,3 +43,6 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 eval "$(zoxide init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+export SSH_AUTH_SOCK=/Users/pierre/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
