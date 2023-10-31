@@ -4,22 +4,45 @@ echo "Setting up your workstation..."
 
 # Install MacOS applications
 if test "$(uname)" = "Darwin"; then
-  echo "--Install brew formulae on MacOS"
-  ./brew.sh
+  echo "--Install brew formulae"
+  # Check for Homebrew and install if we don't have it
+  if ! type brew > /dev/null; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  fi
+
+  echo "---Create/update .zprofile file"
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
+  echo "---Create/update .zprofile file DONE"
+
+  echo "---Load .zprofile with brew path added"
+  source ~/.zprofile
+  echo "---Load .zprofile with brew path added DONE"
+
+
+  # Update Homebrew recipes
+  echo "-----Fetch the newest version of Homebrew and all formulae"
+  brew update
+  echo "-----Fetch the newest version of Homebrew and all formulae DONE"
+
+  # Install all our dependencies with bundle (See Brewfile)
+  echo "-----Install and upgrade all dependencies from Brewfile"
+  brew tap homebrew/bundle
+  brew bundle
+  echo "-----Install and upgrade all dependencies from Brewfile DONE"
   echo "--Installation of brew formulae DONE"
 fi
 
-if test "$(uname)" = "Linux"; then
-  echo "--Install apt-get packages on Linux"
-  ./apt-get.sh
-  echo "--Installation of apt-get package on Linux DONE"
-fi
+# if test "$(uname)" = "Linux"; then
+#   echo "--Install apt-get packages on Linux"
+#   ./apt-get.sh
+#   echo "--Installation of apt-get package on Linux DONE"
+# fi
 
-# Create profile to integrate with Homebrew
-if test "$(uname)" = "Darwin"; then
-  echo "---Create/update .zprofile file"
-  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
-fi
+# # Create profile to integrate with Homebrew
+# if test "$(uname)" = "Darwin"; then
+#   echo "---Create/update .zprofile file"
+#   (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
+# fi
 
 # Create config directory
 echo "---Create .config directory if it doesn't exist"
