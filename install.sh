@@ -23,8 +23,9 @@ fi
 
 # Create config directory
 echo "---Create .config directory if it doesn't exist"
-mkdir -p ~/.config
-mkdir -p ~/.ssh
+mkdir -pv ~/.config
+echo "---Create .ssh directory if it doesn't exist"
+mkdir -pv ~/.ssh
 # Symlink dotfiles
 echo "--Symlink dotfiles"
 ln -shFv ${PWD}/.gitconfig ~/.gitconfig
@@ -41,7 +42,7 @@ ln -shFv ${PWD}/bin ~/bin
 ln -shFv ${PWD}/.ssh/config ~/.ssh/config
 
 if test "$(uname)" = "Darwin"; then
-  mkdir -p ~/Library/Application\ Support/Sublime\ Text/Packages/
+  mkdir -pv ~/Library/Application\ Support/Sublime\ Text/Packages/
   ln -sf ${PWD}/sublimetext/User ~/Library/Application\ Support/Sublime\ Text/Packages/
 fi
 
@@ -49,6 +50,6 @@ echo "--Symlinking of dotfiles DONE"
 
 # Create some required directories
 echo "--Bootstraping some required directories"
-mkdir -p ~/.terraform.d/plugin-cache
+mkdir -pv ~/.terraform.d/plugin-cache
 echo "--Bootstraping some required directories DONE"
 
