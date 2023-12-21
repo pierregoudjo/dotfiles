@@ -57,6 +57,7 @@ cask "amazon-chime"
 cask "authy"
 cask "brave-browser"
 cask "browserosaurus"
+cask "coscreen"
 cask "dash"
 cask "docker"
 cask "drawio"
@@ -66,7 +67,6 @@ cask "font-meslo-lg-nerd-font"
 cask "git-credential-manager"
 cask "google-chrome"
 cask "keycastr"
-cask "logitech-options"
 cask "lunar"
 cask "maccy"
 cask "numi"
@@ -89,4 +89,5 @@ mas "Hush", id: 1544743900
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "Vinegar", id: 1591303229
