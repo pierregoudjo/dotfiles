@@ -13,4 +13,5 @@
 	"spell_check": true,
 	"dark_theme": "Default Dark.sublime-theme",
 	"light_theme": "Default.sublime-theme",
+	"index_files": true,
 }
