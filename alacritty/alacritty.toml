@@ -1,0 +1,25 @@
+[font]
+size = 20.0
+
+[font.normal]
+family = "MesloLGS Nerd Font"
+
+[[keyboard.bindings]]
+chars = "\u001BF"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001BB"
+key = "Left"
+mods = "Alt"
+
+[window]
+dynamic_padding = false
+dynamic_title = true
+opacity = 1.0
+option_as_alt = "None"
+
+[window.padding]
+x = 10
+y = 10
