@@ -24,7 +24,7 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
 
-export BAT_THEME="ansi"
+export BAT_THEME="Dracula"
 
 
 
@@ -46,3 +46,4 @@ eval "$(zoxide init zsh)"
 
 
 export SSH_AUTH_SOCK=/Users/pierre/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+eval "$(zellij setup --generate-auto-start zsh)"
