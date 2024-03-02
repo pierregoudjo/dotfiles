@@ -7,11 +7,13 @@
 	prune = true
 [diff]
 	colorMoved = zebra
+        tool = difftastic
 [pager]
     diff = delta
     log = delta
     reflog = delta
     show = delta
+    difftool = true
 
 [interactive]
     diffFilter = delta --color-only --features=interactive
@@ -39,3 +41,10 @@
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+
+[difftool]
+        prompt = false
+
+[difftool "difftastic"]
+        cmd = difft "$LOCAL" "$REMOTE"
+
