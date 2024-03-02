@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"AlignTab",
 		"Clojure Sublimed",
 		"DashDoc",
 		"LanguageTool",
