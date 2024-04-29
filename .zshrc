@@ -30,8 +30,8 @@ export BAT_THEME="Dracula"
 
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
-
 function my-public-ip { dig +short txt ch whoami.cloudflare @1.0.0.1 | jq -r}
+function mcd() { mkdir $1; cd $1 }
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 
@@ -46,4 +46,4 @@ eval "$(zoxide init zsh)"
 
 
 export SSH_AUTH_SOCK=/Users/pierre/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
-eval "$(zellij setup --generate-auto-start zsh)"
+#eval "$(zellij setup --generate-auto-start zsh)"
