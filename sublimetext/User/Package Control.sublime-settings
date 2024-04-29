@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"Alabaster Color Scheme",
 		"AlignTab",
 		"Clojure Sublimed",
 		"DashDoc",
@@ -13,6 +14,7 @@
 		"LSP-terraform",
 		"MarkdownPreview",
 		"Package Control",
+		"PackageDev",
 		"paredit",
 		"Profile Switcher",
 		"Terminus",

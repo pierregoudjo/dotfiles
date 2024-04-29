@@ -6,5 +6,6 @@
 	{"keys": ["ctrl+b"], "command": "clojure_sublimed_eval_buffer", "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]},
 	{"keys": ["ctrl+i"], "command": "clojure_sublimed_toggle_info", "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]},
 	{"keys": ["super+c"], "command": "clojure_sublimed_copy","context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]},
-	{"keys": ["ctrl+c"], "command": "clojure_sublimed_interrupt_eval", "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]}
+	{"keys": ["ctrl+c"], "command": "clojure_sublimed_interrupt_eval", "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]},
+	{"keys": ["ctrl+shift+enter"], "command": "clojure_sublimed_eval", "args": {"transform": "(doto %code tap>)"}}
 ]
