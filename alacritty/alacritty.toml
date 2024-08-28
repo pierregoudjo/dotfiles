@@ -1,3 +1,9 @@
+live_config_reload = true
+
+import = [
+ "/Users/pierre/.dotfiles/themes/alabaster_dark.toml"
+]
+
 [font]
 size = 20.0
 
@@ -23,3 +29,4 @@ option_as_alt = "None"
 [window.padding]
 x = 10
 y = 10
+

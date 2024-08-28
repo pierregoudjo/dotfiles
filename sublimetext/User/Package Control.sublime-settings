@@ -9,6 +9,7 @@
 		"AlignTab",
 		"Clojure Sublimed",
 		"DashDoc",
+		"Dockerfile Syntax Highlighting",
 		"LanguageTool",
 		"LSP",
 		"LSP-terraform",
@@ -19,6 +20,7 @@
 		"Profile Switcher",
 		"Terminus",
 		"Terraform",
+		"TOML",
 		"Writer Color Scheme",
 	],
 }
