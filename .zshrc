@@ -46,4 +46,8 @@ eval "$(zoxide init zsh)"
 
 
 export SSH_AUTH_SOCK=/Users/pierre/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
-#eval "$(zellij setup --generate-auto-start zsh)"
+
+ZELLIJ_AUTO_EXIT="true"
+if [[ -z "$TERMINUS_SUBLIME" ]]; then
+  eval "$(zellij setup --generate-auto-start zsh)"
+fi
