@@ -33,7 +33,6 @@ function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;
 function my-public-ip { dig +short txt ch whoami.cloudflare @1.0.0.1 | jq -r}
 function mcd() { mkdir $1; cd $1 }
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
 
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
