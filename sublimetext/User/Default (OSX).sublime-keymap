@@ -7,5 +7,11 @@
 	{"keys": ["ctrl+i"], "command": "clojure_sublimed_toggle_info", "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]},
 	{"keys": ["super+c"], "command": "clojure_sublimed_copy","context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]},
 	{"keys": ["ctrl+c"], "command": "clojure_sublimed_interrupt_eval", "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]},
-	{"keys": ["ctrl+shift+enter"], "command": "clojure_sublimed_eval", "args": {"transform": "(doto %code tap>)"}}
+	{"keys": ["ctrl+shift+enter"], "command": "clojure_sublimed_eval", "args": {"transform": "(doto %code tap>)"}},
+    {"keys": ["alt+shift+l"], "command": "terminus_keypress", "args": {"key": "|"}, "context": [{"key": "terminus_view"}] },
+    {"keys": ["alt+n"], "command": "terminus_keypress", "args": {"key": "~"}, "context": [{"key": "terminus_view"}] },
+    {"keys": ["alt+5"], "command": "terminus_keypress", "args": {"key": "{"}, "context": [{"key": "terminus_view"}] },
+    {"keys": ["alt+)"], "command": "terminus_keypress", "args": {"key": "}"}, "context": [{"key": "terminus_view"}] },
+
+
 ]
