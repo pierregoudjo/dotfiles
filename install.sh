@@ -63,6 +63,7 @@ ln -shFv ${PWD}/zellij ~/.config/zellij
 ln -shFv ${PWD}/.terraformrc ~/.terraformrc
 ln -shFv ${PWD}/bin ~/bin
 ln -shFv ${PWD}/.ssh/config ~/.ssh/config
+ln -shFv ${PWD}/eza ~/.config/eza
 
 if test "$(uname)" = "Darwin"; then
   mkdir -pv ~/Library/Application\ Support/Sublime\ Text/Packages/

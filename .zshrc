@@ -18,14 +18,15 @@ then
 fi
 
 export PATH=$PATH:$HOME/bin
-alias l="eza"
-alias ll="eza --long"
-alias lla="eza -a --long"
+alias l="eza --icons=auto"
+alias ll="eza --long --icons=auto"
+alias lla="eza -a --long --icons=auto"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 export BAT_THEME="base16-256"
+export EZA_CONFIG_DIR="$XDG_CONFIG_HOME/eza"
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 function my-public-ip { dig +short txt ch whoami.cloudflare @1.0.0.1 | jq -r}
