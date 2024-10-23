@@ -1,3 +1,6 @@
 [submodule "ssh-over-ssm"]
 	path = ssh-over-ssm
 	url = https://github.com/elpy1/ssh-over-ssm.git
+[submodule "fzf-tab"]
+	path = fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab.git

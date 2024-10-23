@@ -8,6 +8,7 @@ FPATH="${HOME}/.site-functions:${FPATH}"
 
 autoload -Uz compinit
 compinit
+source /Users/pierre/.dotfiles/fzf-tab/fzf-tab.plugin.zsh
 
 export AWS_VAULT_KEYCHAIN_NAME=login
 
@@ -26,9 +27,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 export BAT_THEME="Dracula"
 
-
-
-
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 function my-public-ip { dig +short txt ch whoami.cloudflare @1.0.0.1 | jq -r}
 function mcd() { mkdir $1; cd $1 }
@@ -41,8 +39,7 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 eval "$(zoxide init zsh)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+source <(fzf --zsh)
 
 export SSH_AUTH_SOCK=/Users/pierre/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
