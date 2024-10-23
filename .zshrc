@@ -8,7 +8,7 @@ FPATH="${HOME}/.site-functions:${FPATH}"
 
 autoload -Uz compinit
 compinit
-source "$(dirname $0)/fzf-tab/fzf-tab.plugin.zsh"
+source "$HOME/.dotfiles/fzf-tab/fzf-tab.plugin.zsh"
 
 export AWS_VAULT_KEYCHAIN_NAME=login
 
