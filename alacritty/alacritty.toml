@@ -1,7 +1,7 @@
 live_config_reload = true
 
 import = [
- "/Users/pierre/.dotfiles/themes/alabaster_dark.toml"
+ "/Users/pierre/.dotfiles/themes/alabaster.toml"
 ]
 
 [font]
