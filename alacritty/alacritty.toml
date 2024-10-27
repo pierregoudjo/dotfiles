@@ -1,6 +1,6 @@
-live_config_reload = true
+general.live_config_reload = true
 
-import = [
+general.import = [
  "/Users/pierre/.dotfiles/themes/alabaster.toml"
 ]
 
@@ -8,7 +8,7 @@ import = [
 size = 20.0
 
 [font.normal]
-family = "MesloLGS Nerd Font"
+family = "FiraCode Nerd Font Mono"
 
 [[keyboard.bindings]]
 chars = "\u001BF"
