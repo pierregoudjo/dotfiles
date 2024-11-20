@@ -32,7 +32,6 @@ export PAGER="bat --style=header-filename,rule,plain"
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 function my-public-ip { dig +short txt ch whoami.cloudflare @1.0.0.1 | jq -r}
-function mcd() { mkdir $1; cd $1 }
 autoload -U +X bashcompinit && bashcompinit
 
 bindkey "^[[1;3C" forward-word
@@ -46,7 +45,3 @@ source <(fzf --zsh)
 
 export SSH_AUTH_SOCK=/Users/pierre/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
-ZELLIJ_AUTO_EXIT="true"
-if [[ -z "$TERMINUS_SUBLIME" ]]; then
-  eval "$(zellij setup --generate-auto-start zsh)"
-fi
