@@ -65,6 +65,7 @@ ln -shFv ${PWD}/bin ~/bin
 ln -shFv ${PWD}/.ssh/config ~/.ssh/config
 ln -shFv ${PWD}/eza ~/.config/eza
 ln -shFv ${PWD}/bat/ ~/.config/bat
+ln -shFv ${PWD}/nvim/ ~/.config/nvim
 
 if test "$(uname)" = "Darwin"; then
   mkdir -pv ~/Library/Application\ Support/Sublime\ Text/Packages/
