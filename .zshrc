@@ -35,7 +35,7 @@ autoload -U +X bashcompinit && bashcompinit
 
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd=cd zsh)"
 
 source <(fzf --zsh)
 
