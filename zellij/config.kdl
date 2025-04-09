@@ -1,3 +1,17 @@
+pane_frames false
+on_force_close "quit"
+
+theme "alabaster"
+default_layout "minimal"
+default_mode "locked"
+show_startup_tips false
+
+plugins {
+    datetime location="file:/Users/pierre/.config/zellij/plugins/zellij-datetime.wasm"
+    what-time location="file:/Users/pierre/.config/zellij/plugins/zellij-what-time.wasm"
+    zj-status-bar location="file:/Users/pierre/.config/zellij/plugins/zj-status-bar.wasm"
+}
+
 keybinds {
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -209,18 +223,3 @@ keybinds {
         bind "Ctrl b" { SwitchToMode "Tmux"; }
     }
 }
-
-pane_frames false
-
-theme "alabaster"
-
-default_layout "minimal"
-
-default_mode "locked"
-
-plugins {
-    datetime location="file:/Users/pierre/.config/zellij/plugins/zellij-datetime.wasm"
-    what-time location="file:/Users/pierre/.config/zellij/plugins/zellij-what-time.wasm"
-    zj-status-bar location="file:/Users/pierre/.config/zellij/plugins/zj-status-bar.wasm"
-}
-
