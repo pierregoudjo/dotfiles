@@ -26,7 +26,6 @@ if test "$(uname)" = "Darwin"; then
 
   # Install all our dependencies with bundle (See Brewfile)
   echo "-----Install and upgrade all dependencies from Brewfile"
-  brew tap homebrew/bundle
   brew bundle
   echo "-----Install and upgrade all dependencies from Brewfile DONE"
   echo "--Installation of brew formulae DONE"
@@ -59,6 +58,7 @@ ln -shFv ${PWD}/starship/starship.toml ~/.config/starship.toml
 ln -shFv ${PWD}/.site-functions/ ~/.site-functions
 ln -shFv ${PWD}/gh/ ~/.config/gh
 ln -shFv ${PWD}/alacritty ~/.config/alacritty
+ln -shFv ${PWD}/ghostty ~/.config/ghostty
 ln -shFv ${PWD}/zellij ~/.config/zellij
 ln -shFv ${PWD}/.terraformrc ~/.terraformrc
 ln -shFv ${PWD}/bin ~/bin
