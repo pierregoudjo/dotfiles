@@ -39,5 +39,5 @@ eval "$(zoxide init --cmd=cd zsh)"
 
 source <(fzf --zsh)
 
-export SSH_AUTH_SOCK=/Users/pierre/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+export SSH_AUTH_SOCK=$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
