@@ -57,7 +57,6 @@ ln -shFv ${PWD}/.gitignore_global ~/.gitignore
 ln -shFv ${PWD}/starship/starship.toml ~/.config/starship.toml
 ln -shFv ${PWD}/.site-functions/ ~/.site-functions
 ln -shFv ${PWD}/gh/ ~/.config/gh
-ln -shFv ${PWD}/alacritty ~/.config/alacritty
 ln -shFv ${PWD}/ghostty ~/.config/ghostty
 ln -shFv ${PWD}/zellij ~/.config/zellij
 ln -shFv ${PWD}/.terraformrc ~/.terraformrc
@@ -66,6 +65,7 @@ ln -shFv ${PWD}/.ssh/config ~/.ssh/config
 ln -shFv ${PWD}/eza ~/.config/eza
 ln -shFv ${PWD}/bat/ ~/.config/bat
 ln -shFv ${PWD}/nvim/ ~/.config/nvim
+ln -shFv ${PWD}/aerc/ ~/.config/aerc
 
 if test "$(uname)" = "Darwin"; then
   mkdir -pv ~/Library/Application\ Support/Sublime\ Text/Packages/
