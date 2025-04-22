@@ -8,20 +8,13 @@ layout {
             plugin location="zellij:status-bar"
         }
     }
-    tab name="Explorer" {
-        pane command="yazi"
-    }
     tab name="Email" {
         pane command="aerc"
     }
     tab name="Whatsapp" {
         pane command="nchat"
     }
-
-    // pane borderless=true
-    // pane size=1 split_direction="vertical"{
-    //     pane size="100%" borderless=true {
-    //         plugin location="zellij:compact-bar"
-    //     }
-    // }
+    tab name="Explorer" focus=true {
+        pane command="yazi"
+    }
 }
