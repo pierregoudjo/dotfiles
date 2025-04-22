@@ -2,7 +2,7 @@ pane_frames false
 on_force_close "quit"
 
 theme "alabaster"
-default_layout "minimal"
+default_layout "workspace"
 default_mode "locked"
 show_startup_tips false
 
