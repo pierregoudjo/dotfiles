@@ -7,9 +7,9 @@ default_mode "locked"
 show_startup_tips false
 
 plugins {
-    datetime location="file:/Users/pierre/.config/zellij/plugins/zellij-datetime.wasm"
-    what-time location="file:/Users/pierre/.config/zellij/plugins/zellij-what-time.wasm"
-    zj-status-bar location="file:/Users/pierre/.config/zellij/plugins/zj-status-bar.wasm"
+    datetime location="file:~/.config/zellij/plugins/zellij-datetime.wasm"
+    what-time location="file:~/.config/zellij/plugins/zellij-what-time.wasm"
+    zj-status-bar location="file:~/.config/zellij/plugins/zj-status-bar.wasm"
 }
 
 keybinds {
