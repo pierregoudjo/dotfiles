@@ -16,6 +16,7 @@ brew "gh"
 brew "git"
 brew "git-delta"
 brew "git-filter-repo"
+brew "hashicorp/tap/terraform"
 brew "hyperfine"
 brew "jnv"
 brew "jq"
@@ -68,4 +69,5 @@ mas "Pages", id: 409201541
 mas "Vinegar", id: 1591303229
 tap "clojure-lsp/brew"
 tap "d99kris/nchat"
+tap "hashicorp/tap"
 tap "microsoft/git"
