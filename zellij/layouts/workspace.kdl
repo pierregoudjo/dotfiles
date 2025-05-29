@@ -11,6 +11,9 @@ layout {
     tab name="Email" {
         pane command="aerc"
     }
+    tab name="Whatsapp" {
+        pane command="nchat"
+    }
     tab name="Explorer" focus=true {
         pane command="yazi"
     }
