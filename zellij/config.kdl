@@ -7,8 +7,6 @@ default_mode "locked"
 show_startup_tips false
 
 plugins {
-    datetime location="file:~/.config/zellij/plugins/zellij-datetime.wasm"
-    what-time location="file:~/.config/zellij/plugins/zellij-what-time.wasm"
     zj-status-bar location="file:~/.config/zellij/plugins/zj-status-bar.wasm"
 }
 
@@ -60,6 +58,8 @@ keybinds {
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
         bind "h" "Left" "Up" "k" { GoToPreviousTab; }
         bind "l" "Right" "Down" "j" { GoToNextTab; }
+        bind "Shift Left" "Shift h" { MoveTab "Left";}
+        bind "Shift Right" "Shift l" { MoveTab "Right"; }
         bind "n" { NewTab; SwitchToMode "Normal"; }
         bind "x" { CloseTab; SwitchToMode "Normal"; }
         bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
