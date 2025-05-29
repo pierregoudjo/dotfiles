@@ -10,6 +10,8 @@ autoload -Uz compinit
 compinit
 source "$HOME/.dotfiles/fzf-tab/fzf-tab.plugin.zsh"
 
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
 export AWS_VAULT_KEYCHAIN_NAME=login
 
 if type starship &>/dev/null
