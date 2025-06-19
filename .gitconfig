@@ -1,39 +1,9 @@
 [user]
 	name = Pierre GOUDJO
 	email = 1331326+pierregoudjo@users.noreply.github.com
-#[merge]
-#	ff = only
 [fetch]
 	prune = true
-[diff]
-	colorMoved = zebra
-        tool = difftastic
-[pager]
-    diff = delta
-    log = delta
-    reflog = delta
-    show = delta
-    difftool = true
-
-[interactive]
-    diffFilter = delta --color-only --features=interactive
-
-[delta]
-    features = decorations
-    line-numbers = true
-
-[delta "interactive"]
-    keep-plus-minus-markers = false
-
-[delta "decorations"]
-    commit-decoration-style = blue ol
-    commit-style = raw
-    file-style = omit
-    hunk-header-decoration-style = blue box
-    hunk-header-file-style = red
-    hunk-header-line-number-style = "#067a00"
-    hunk-header-style = file line-number syntax
-
+;
 [init]
 	defaultBranch = main
 [credential]
@@ -42,9 +12,11 @@
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 
+[diff]
+	external = difft
+	tool   = difftastic
 [difftool]
-        prompt = false
+	prompt = false
 
 [difftool "difftastic"]
-        cmd = difft "$LOCAL" "$REMOTE"
-
+	cmd = difft "$MERGED" "$LOCAL" "abcdef1" "100644" "$REMOTE" "abcdef2" "100644"
