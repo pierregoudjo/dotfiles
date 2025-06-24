@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ICLOUD_USERNAME=$( security find-generic-password -a $USER -s aerc-goudjo-email-username -w )
+ICLOUD_USERNAME=$( security find-generic-password -a $USER -s aerc-goudjo-email-username -w | sed -r "s/@/%40/g")
 
 EMAIL_ADDRESS=$( security find-generic-password -a $USER -s aerc-goudjo-email-address -w )
 

@@ -1,6 +1,6 @@
 [Personal]
-source        = imaps://${ICLOUD_USERNAME}%40icloud.com@imap.mail.me.com:993
-outgoing      = smtp://${ICLOUD_USERNAME}%40icloud.com@smtp.mail.me.com:587
+source        = imaps://${ICLOUD_USERNAME}@imap.mail.me.com:993
+outgoing      = smtp://${ICLOUD_USERNAME}@smtp.mail.me.com:587
 default       = INBOX
 from          = Pierre GOUDJO <${EMAIL_ADDRESS}>
 aliases       = Pierre GOUDJO <*@${DOMAIN_NAME}>
