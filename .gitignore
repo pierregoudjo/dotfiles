@@ -1,6 +1,8 @@
 Brewfile.lock.json
 gh/hosts.yml
 aerc/accounts.conf
+nchat/*
+!nchat/*conf
 # Created by https://www.toptal.com/developers/gitignore/api/osx
 # Edit at https://www.toptal.com/developers/gitignore?templates=osx
 
