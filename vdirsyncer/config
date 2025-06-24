@@ -1,0 +1,19 @@
+[general]
+status_path = "~/.vdirsyncer/status/"
+
+[pair icloud_contacts]
+a = "icloud_local_contacts"
+b = "icloud_remote_contacts"
+collections = ["from a", "from b"]
+conflict_resolution = "a wins"
+
+[storage icloud_local_contacts]
+type = "filesystem"
+path = "~/.contacts"
+fileext = ".vcf"
+
+[storage icloud_remote_contacts]
+type = "carddav"
+url = "https://contacts.icloud.com/"
+password.fetch = ["command", "~/.config/vdirsyncer/get_encrypted_value_from_keychain.sh", "aerc-goudjo-email-password"]
+username.fetch = ["command", "~/.config/vdirsyncer/get_encrypted_value_from_keychain.sh", "aerc-goudjo-email-username"]
