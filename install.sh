@@ -67,6 +67,8 @@ ln -shFv ${PWD}/bat/ ~/.config/bat
 ln -shFv ${PWD}/nvim/ ~/.config/nvim
 ln -shFv ${PWD}/aerc/ ~/.config/aerc
 ln -shFv ${PWD}/lazygit/ ~/.config/lazygit
+ln -shFv ${PWD}/vdirsyncer/ ~/.config/vdirsyncer
+ln -shFv ${PWD}/khard/ ~/.config/khard
 
 if test "$(uname)" = "Darwin"; then
   mkdir -pv ~/Library/Application\ Support/Sublime\ Text/Packages/
