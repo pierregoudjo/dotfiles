@@ -17,3 +17,21 @@ type = "carddav"
 url = "https://contacts.icloud.com/"
 password.fetch = ["command", "~/.config/vdirsyncer/get_encrypted_value_from_keychain.sh", "aerc-goudjo-email-password"]
 username.fetch = ["command", "~/.config/vdirsyncer/get_encrypted_value_from_keychain.sh", "aerc-goudjo-email-username"]
+
+[pair icloud_calendar]
+a = "icloud_local_calendar"
+b = "icloud_remote_calendar"
+collections = ["from a", "from b"]
+conflict_resolution = "a wins"
+
+[storage icloud_local_calendar]
+type = "filesystem"
+path = "~/.calendar"
+fileext = ".ics"
+
+[storage icloud_remote_calendar]
+type = "caldav"
+url = "https://caldav.icloud.com"
+password.fetch = ["command", "~/.config/vdirsyncer/get_encrypted_value_from_keychain.sh", "aerc-goudjo-email-password"]
+username.fetch = ["command", "~/.config/vdirsyncer/get_encrypted_value_from_keychain.sh", "aerc-goudjo-email-username"]
+
