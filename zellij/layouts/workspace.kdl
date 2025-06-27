@@ -8,13 +8,12 @@ layout {
             plugin location="zellij:status-bar"
         }
     }
-    tab name="Email" {
+    tab name="Email" focus=true {
         pane command="aerc"
     }
-    tab name="Whatsapp" {
-        pane command="nchat"
-    }
-    tab name="Explorer" focus=true {
-        pane command="yazi"
+    tab name="Calendar" {
+        pane command="khal" {
+            args "interactive"
+        }
     }
 }
