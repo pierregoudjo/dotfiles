@@ -33,7 +33,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export BAT_THEME="Travertine"
 export EZA_CONFIG_DIR="$XDG_CONFIG_HOME/eza"
 export EDITOR=nvim
-export PAGER=moar
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 function my-public-ip { dig +short txt ch whoami.cloudflare @1.0.0.1 | jq -r}
