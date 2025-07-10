@@ -27,12 +27,12 @@ echo "Setting up your workstation..."
 
   # Update Homebrew recipes
   echo "-----Fetch the newest version of Homebrew and all formulae"
-  brew update
+  $BREW_EXECUTABLE update
   echo "-----Fetch the newest version of Homebrew and all formulae DONE"
 
   # Install all our dependencies with bundle (See Brewfile)
   echo "-----Install and upgrade all dependencies from Brewfile"
-  brew bundle
+  $BREW_EXECUTABLE bundle
   echo "-----Install and upgrade all dependencies from Brewfile DONE"
   echo "--Installation of brew formulae DONE"
 # fi
