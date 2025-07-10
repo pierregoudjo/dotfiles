@@ -30,7 +30,7 @@ brew "khal"
 brew "khard"
 brew "lazygit"
 brew "lynx"
-brew "mas"
+brew "mas" if OS.mac?
 brew "moar"
 brew "neovim"
 brew "p7zip"
