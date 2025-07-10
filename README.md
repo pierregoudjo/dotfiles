@@ -7,6 +7,7 @@ These dotfiles are hugely influenced by @driesvints [dotfiles](https://github.co
 ## Installation
 
 - Clone this repo to `~/.dotfiles`
+- Fetch all the submodules: `git submodule update --init --recursive`
 - Run `install.sh` to start the installation
 - Set zsh as your default shell: `chsh -s $(which zsh)`
 - Reload your environment with `source ~/.zshrc`
