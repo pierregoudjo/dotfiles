@@ -43,11 +43,9 @@ echo "Setting up your workstation..."
 #   echo "--Installation of apt-get package on Linux DONE"
 # fi
 
-# # Create profile to integrate with Homebrew
-# if test "$(uname)" = "Darwin"; then
-#   echo "---Create/update .zprofile file"
-#   (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
-# fi
+# Create profile to integrate with Homebrew
+echo "---Create/update .zprofile file"
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
 
 # Create config directory
 echo "---Create .config directory if it doesn't exist"
@@ -76,6 +74,7 @@ ln -svf ${PWD}/lazygit/ ~/.config/
 ln -svf ${PWD}/vdirsyncer/ ~/.config/
 ln -svf ${PWD}/khard/ ~/.config/
 ln -svf ${PWD}/khal/ ~/.config/
+ln -svf ${PWD}/aerospace ~/.config
 
 if test "$(uname)" = "Darwin"; then
   mkdir -pv ~/Library/Application\ Support/Sublime\ Text/Packages/
@@ -89,3 +88,5 @@ echo "--Bootstraping some required directories"
 mkdir -pv ~/.terraform.d/plugin-cache
 echo "--Bootstraping some required directories DONE"
 
+# Build bat cache
+bat cache --build

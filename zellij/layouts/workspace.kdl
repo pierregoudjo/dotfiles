@@ -8,12 +8,12 @@ layout {
             plugin location="zellij:status-bar"
         }
     }
-    tab name="Email" focus=true {
-        pane command="aerc"
-    }
-    tab name="Calendar" {
-        pane command="khal" {
-            args "interactive"
-        }
-    }
+    // tab name="Email" focus=true {
+    //     pane command="aerc"
+    // }
+    // tab name="Calendar" {
+    //     pane command="khal" {
+    //         args "interactive"
+    //     }
+    // }
 }
