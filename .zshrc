@@ -51,3 +51,8 @@ function zvm_vi_yank() {
 	echo ${CUTBUFFER} | pbcopy
 	zvm_exit_visual_mode
 }
+
+# Load additional scripts if they exists
+if [ -f "$HOME/.zsh_extras" ]; then
+  source "$HOME/.zsh_extras"
+fi

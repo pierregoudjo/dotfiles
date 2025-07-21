@@ -24,6 +24,8 @@ These dotfiles are hugely influenced by @driesvints [dotfiles](https://github.co
 - Run `vdirsyncer discover` command to discover the ics and vcard collections
 - Run `vdirsyncer sync` to pull the calendars and contacts locally
 
+### Load extras configuration scripts
+If you need to add some configuration but don't want it in SCM, create a ~/.zsh_extras file and write your configuration there. It will be sourced when an interactive session is launched
 ## Check the code
 
 See the [install.sh](install.sh)
