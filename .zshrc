@@ -56,3 +56,7 @@ function zvm_vi_yank() {
 if [ -f "$HOME/.zsh_extras" ]; then
   source "$HOME/.zsh_extras"
 fi
+
+export JAVA_TOOL_OPTIONS="-Djavax.net.ssl.trustStore=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home/lib/security/cacerts"
+
+eval "$(mise activate zsh)"
