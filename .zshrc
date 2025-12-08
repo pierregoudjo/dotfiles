@@ -14,8 +14,6 @@ source "$(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zs
 
 source "$(brew --prefix)/share/zsh-autopair/autopair.zsh"
 
-export AWS_VAULT_KEYCHAIN_NAME=login
-
 if type starship &>/dev/null
 then
   eval "$(starship init zsh)"
@@ -26,6 +24,7 @@ alias l="eza --icons=auto"
 alias ll="eza --long --icons=auto"
 alias lla="eza -a --long --icons=auto"
 alias -g P='| pe | fzf | read filename; [ ! -z $filename ] && nvim $filename'
+alias awslocal="aws --endpoint-url=http://localhost:4566"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
