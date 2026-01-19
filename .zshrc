@@ -24,7 +24,7 @@ alias l="eza --icons=auto"
 alias ll="eza --long --icons=auto"
 alias lla="eza -a --long --icons=auto"
 alias -g P='| pe | fzf | read filename; [ ! -z $filename ] && nvim $filename'
-alias awslocal="aws --endpoint-url=http://localhost:4566"
+alias awslocal="aws --endpoint-url http://localhost:4566"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
