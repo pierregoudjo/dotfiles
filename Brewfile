@@ -1,5 +1,4 @@
 tap "clojure-lsp/brew"
-tap "d99kris/nchat"
 tap "microsoft/git"
 tap "nikitabobko/tap"
 tap "localstack/tap"
@@ -16,7 +15,6 @@ brew "cidr"
 brew "clojure"
 brew "clojure-lsp/brew/clojure-lsp-native"
 brew "colima"
-brew "d99kris/nchat/nchat", args: ["without-telegram"]
 brew "difftastic"
 brew "docker"
 brew "doggo"
