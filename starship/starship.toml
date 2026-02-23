@@ -42,6 +42,5 @@ format = "[$duration]($style) "
 style = "yellow"
 
 [aws]
-format = '[ $symbol($profile )(\($region\) )]($style)'
 style = "blue"
-symbol = '  '
+symbol = ' '

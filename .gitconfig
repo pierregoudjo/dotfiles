@@ -6,12 +6,6 @@
 ;
 [init]
 	defaultBranch = main
-[credential]
-	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
-
 [diff]
 	external = difft
 	tool   = difftastic
@@ -22,3 +16,8 @@
 	cmd = difft "$MERGED" "$LOCAL" "abcdef1" "100644" "$REMOTE" "abcdef2" "100644"
 [credential "https://git-codecommit.eu-central-1.amazonaws.com"]
 	provider = generic
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
