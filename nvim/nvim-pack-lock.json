@@ -1,0 +1,20 @@
+{
+  "plugins": {
+    "alabaster.nvim": {
+      "rev": "80dda0473b2c7e28d8f6cdba621afbe4c0a847db",
+      "src": "https://github.com/mcncl/alabaster.nvim"
+    },
+    "mini.nvim": {
+      "rev": "3b1b65e1e14cd0bf7b4178b38750f4a733e9d4e0",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "nvim-lspconfig": {
+      "rev": "841c6d4139aedb8a3f2baf30cef5327371385b93",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "oil.nvim": {
+      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "src": "https://github.com/stevearc/oil.nvim.git"
+    }
+  }
+}
