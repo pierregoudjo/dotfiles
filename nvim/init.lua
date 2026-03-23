@@ -68,8 +68,6 @@ require('oil').setup()
 
 -- Global options
 vim.cmd.colorscheme 'alabaster'
--- Higlight the cursor line in MiniPick because the colorscheme blurs it
-vim.api.nvim_set_hl(0, 'MiniPickMatchCurrent', {bg = '#98fb98'})
 vim.o.number         = true
 vim.o.relativenumber = true
 vim.o.list           = true
@@ -100,7 +98,7 @@ vim.lsp.config('lua_ls', {
   }
 })
 
-
+-- Keymaps
 vim.keymap.set('n', '<Esc>'           , '<cmd>nohlsearch<CR>'                         , {desc = 'Disable Higlighting'})
 vim.keymap.set('t', '<Esc><Esc>'      , '<C-\\><C-n>'                                 , { desc = 'Exit terminal mode' })
 vim.keymap.set('n', '<left>'          , '<cmd>echo "Use h to move!!"<CR>'             , {desc = 'Disable arrow keys'})
@@ -114,4 +112,7 @@ vim.keymap.set('n', '<leader>sk'      , '<Cmd>Pick keymaps<CR>'                 
 vim.keymap.set('n', '<leader>sd'      , '<Cmd>Pick diagnostic<CR>'                    , {desc = '[S]earch [D]iagnostic'})
 vim.keymap.set('n', '<leader>sr'      , MiniPick.builtin.resume                       , {desc = '[S]earch [R]esume'})
 vim.keymap.set('n', '<leader>gd'      , '<Cmd>Pick lsp scope="definition"<CR>'        , {desc = '[G]o to [D]efinition'})
+
+-- Higlight the cursor line in MiniPick because the colorscheme blurs it
+vim.api.nvim_set_hl(0, 'MiniPickMatchCurrent', {bg = '#98fb98'})
 vim.keymap.set('n', '<leader><leader>', MiniPick.builtin.buffers                      , {desc = '[ ] Find existing buffers'})
