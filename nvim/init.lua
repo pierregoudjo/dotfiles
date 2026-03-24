@@ -5,7 +5,8 @@ vim.pack.add({
   'https://github.com/neovim/nvim-lspconfig',
   'https://github.com/nvim-mini/mini.nvim',
   'https://github.com/mcncl/alabaster.nvim',
-  'https://github.com/stevearc/oil.nvim.git'
+  'https://github.com/stevearc/oil.nvim.git',
+  'https://github.com/nvim-treesitter/nvim-treesitter'
 })
 
 -- Package setup
@@ -65,6 +66,27 @@ miniclue.setup({
     miniclue.gen_clues.windows(),
     miniclue.gen_clues.z(),
   },
+})
+
+local languages = {'lua', 'terraform', 'javascript', 'clojure', 'typescript', 'markdown'}
+require('nvim-treesitter').install(languages)
+vim.api.nvim_create_autocmd('PackChanged', { callback = function(ev)
+  local name, kind = ev.data.spec.name, ev.data.kind
+  if name == 'nvim-treesitter' and kind == 'update' then
+    if not ev.data.active then vim.cmd.packadd('nvim-treesitter') end
+    vim.cmd('TSUpdate')
+  end
+end })
+--Tree-sitter configuration
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = languages,
+  callback = function()
+	vim.treesitter.start()
+	vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+	vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+	vim.wo.foldmethod = 'expr'
+
+  end,
 })
 require('oil').setup()
 
