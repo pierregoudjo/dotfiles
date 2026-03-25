@@ -117,6 +117,8 @@ automatically-unhide-macos-hidden-apps = false
     alt-d = 'workspace D'
     alt-t = 'workspace T'
     alt-w = 'workspace W'
+    alt-m = 'workspace M'
+    alt-o = 'workspace O'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -130,7 +132,6 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-9 = 'move-node-to-workspace 9'
     alt-shift-a = 'move-node-to-workspace A'
     alt-shift-b = 'move-node-to-workspace B'
-    alt-shift-c = 'move-node-to-workspace C'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -154,7 +155,6 @@ automatically-unhide-macos-hidden-apps = false
     9 = 'main'
     A = 'secondary'
     B = 'secondary'
-    C = 'secondary'
 
 [mode.service.binding]
     esc = ['reload-config', 'mode main']
@@ -185,7 +185,10 @@ automatically-unhide-macos-hidden-apps = false
     run = 'move-node-to-workspace T' # mnemonics T - Terminal
 [[on-window-detected]]
     if.app-id = 'com.microsoft.teams2'
-    run = 'move-node-to-workspace C' # mnemonics Communication
+    run = 'move-node-to-workspace C' # mnemonics Chat
+[[on-window-detected]]
+    if.app-id = 'com.electron.ollama'
+    run = 'move-node-to-workspace O' # mnemonics O - Ollama
 [[on-window-detected]]
     if.app-id = 'com.microsoft.Outlook'
-    run = 'move-node-to-workspace C' # mnemonics T - Communication
+    run = 'move-node-to-workspace M' # mnemonics Mail
