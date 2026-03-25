@@ -100,11 +100,10 @@ vim.o.inccommand     = 'split'
 vim.o.scrolloff      = 10
 vim.o.confirm        = true
 vim.o.mouse          = ''
+vim.o.foldlevelstart = 99
 
 -- Lsp configuration
 vim.lsp.config('lua_ls', {
-  cmd = {'lua-language-server'},
-  filetypes = {'lua'},
   settings = {
     Lua = {
       runtime = {
@@ -121,6 +120,10 @@ vim.lsp.config('lua_ls', {
     }
   }
 })
+vim.lsp.config('terraformls',{})
+
+vim.lsp.config('clojure_lsp', {})
+
 
 -- Keymaps
 vim.keymap.set('n', '<Esc>'           , '<cmd>nohlsearch<CR>'                         , {desc = 'Disable Higlighting'})
@@ -136,6 +139,7 @@ vim.keymap.set('n', '<leader>sk'      , '<Cmd>Pick keymaps<CR>'                 
 vim.keymap.set('n', '<leader>sd'      , '<Cmd>Pick diagnostic<CR>'                    , {desc = '[S]earch [D]iagnostic'})
 vim.keymap.set('n', '<leader>sr'      , MiniPick.builtin.resume                       , {desc = '[S]earch [R]esume'})
 vim.keymap.set('n', '<leader>gd'      , '<Cmd>Pick lsp scope="definition"<CR>'        , {desc = '[G]o to [D]efinition'})
+vim.keymap.set('n', '<leader>nl'      , MiniNotify.show_history, {desc = '[N]otification [L]ist'})
 
 -- Higlight the cursor line in MiniPick because the colorscheme blurs it
 vim.api.nvim_set_hl(0, 'MiniPickMatchCurrent', {bg = '#98fb98'})
