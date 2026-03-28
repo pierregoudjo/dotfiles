@@ -1,5 +1,6 @@
 # Pierre's dotfiles
 ## What is this
+
 This repository helps me setup and maintain my workstation. It takes the effort out of installing everything manually. 
 
 These dotfiles are hugely influenced by @driesvints [dotfiles](https://github.com/driesvints/dotfiles/tree/f6321eed4852578c5c23894dcb22814851efd8d1)
@@ -25,7 +26,9 @@ These dotfiles are hugely influenced by @driesvints [dotfiles](https://github.co
 - Run `vdirsyncer sync` to pull the calendars and contacts locally
 
 ### Load extras configuration scripts
+
 If you need to add some configuration but don't want it in SCM, create a ~/.zsh_extras file and write your configuration there. It will be sourced when an interactive session is launched
+
 ## Check the code
 
 See the [install.sh](install.sh)
