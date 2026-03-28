@@ -2,14 +2,17 @@
 
 -- Packages download
 vim.pack.add({
-  'https://github.com/neovim/nvim-lspconfig',
-  'https://github.com/nvim-mini/mini.nvim',
-  'https://github.com/mcncl/alabaster.nvim',
-  'https://github.com/stevearc/oil.nvim.git',
-  'https://github.com/nvim-treesitter/nvim-treesitter'
+  { src = 'https://github.com/neovim/nvim-lspconfig', version = 'v2.7.0' },
+  { src = 'https://github.com/nvim-mini/mini.nvim', version = 'stable' },
+  { src = 'https://github.com/mcncl/alabaster.nvim' },
+  { src = 'https://github.com/stevearc/oil.nvim.git', version = 'v2.15.0' },
+  { src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
+  { src = 'https://github.com/bullets-vim/bullets.vim' },
+  { src = 'https://github.com/tadmccorkle/markdown.nvim' }
 })
 
 -- Package setup
+require('mini.ai').setup()
 require('mini.icons').setup()
 require('mini.pairs').setup()
 require('mini.snippets').setup()
@@ -25,6 +28,8 @@ require('mini.notify').setup()
 require('mini.basics').setup()
 require('mini.diff').setup()
 require('mini.git').setup()
+require('mini.surround').setup()
+require('markdown').setup()
 local miniclue = require('mini.clue')
 miniclue.setup({
   triggers = {
@@ -120,10 +125,40 @@ vim.lsp.config('lua_ls', {
     }
   }
 })
-vim.lsp.config('terraformls',{})
+vim.lsp.enable('lua_ls')
 
-vim.lsp.config('clojure_lsp', {})
+-- Merge capabilities with the default config from lsp/markdown_oxide.lua
+local capabilities = vim.lsp.protocol.make_client_capabilities()
 
+-- Use the function call form to MERGE (not replace) the config
+vim.lsp.config('markdown_oxide', {
+    -- Ensure that dynamicRegistration is enabled! This allows the LS to take into account actions like the
+    -- Create Unresolved File code action, resolving completions for unindexed code blocks, ...
+    capabilities = vim.tbl_deep_extend(
+        'force',
+        capabilities,
+        {
+            workspace = {
+                didChangeWatchedFiles = {
+                    dynamicRegistration = true,
+                },
+            },
+        }
+    ),
+})
+vim.lsp.enable('markdown_oxide')
+
+vim.treesitter.language.register('clojure', { 'edn', 'clojure' })
+vim.lsp.config('clojure_lsp', {
+	filetypes = { 'clojure' }
+})
+vim.lsp.enable('clojure_lsp')
+
+vim.treesitter.language.register('terraform', { 'terraform', 'terraform-vars' })
+vim.lsp.config('terraformls', {
+	filetypes = { 'terraform' }
+})
+vim.lsp.enable('terraformls')
 
 -- Keymaps
 vim.keymap.set('n', '<Esc>'           , '<cmd>nohlsearch<CR>'                         , {desc = 'Disable Higlighting'})

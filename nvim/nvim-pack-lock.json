@@ -4,13 +4,23 @@
       "rev": "80dda0473b2c7e28d8f6cdba621afbe4c0a847db",
       "src": "https://github.com/mcncl/alabaster.nvim"
     },
+    "bullets.vim": {
+      "rev": "89294b8930e660936374fb763ac48a1ac51dd29c",
+      "src": "https://github.com/bullets-vim/bullets.vim"
+    },
+    "markdown.nvim": {
+      "rev": "093be911d90de03877f3009de36081c1a6242d51",
+      "src": "https://github.com/tadmccorkle/markdown.nvim"
+    },
     "mini.nvim": {
       "rev": "3b1b65e1e14cd0bf7b4178b38750f4a733e9d4e0",
-      "src": "https://github.com/nvim-mini/mini.nvim"
+      "src": "https://github.com/nvim-mini/mini.nvim",
+      "version": "'stable'"
     },
     "nvim-lspconfig": {
-      "rev": "841c6d4139aedb8a3f2baf30cef5327371385b93",
-      "src": "https://github.com/neovim/nvim-lspconfig"
+      "rev": "97774019cb17697f35872b28bc020a72b4ca1b51",
+      "src": "https://github.com/neovim/nvim-lspconfig",
+      "version": "'v2.7.0'"
     },
     "nvim-treesitter": {
       "rev": "6620ae1c44dfa8623b22d0cbf873a9e8d073b849",
@@ -18,7 +28,8 @@
     },
     "oil.nvim": {
       "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
-      "src": "https://github.com/stevearc/oil.nvim.git"
+      "src": "https://github.com/stevearc/oil.nvim.git",
+      "version": "'v2.15.0'"
     }
   }
 }
