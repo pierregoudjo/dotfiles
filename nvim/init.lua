@@ -8,7 +8,8 @@ vim.pack.add({
   { src = 'https://github.com/stevearc/oil.nvim.git', version = 'v2.15.0' },
   { src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
   { src = 'https://github.com/bullets-vim/bullets.vim' },
-  { src = 'https://github.com/tadmccorkle/markdown.nvim' }
+  { src = 'https://github.com/tadmccorkle/markdown.nvim' },
+  { src = 'https://github.com/folke/zen-mode.nvim' },
 })
 
 -- Package setup
@@ -16,8 +17,6 @@ require('mini.ai').setup()
 require('mini.icons').setup()
 require('mini.pairs').setup()
 require('mini.snippets').setup()
-require('mini.statusline').setup()
-require('mini.tabline').setup()
 require('mini.pick').setup()
 require('mini.extra').setup()
 require('mini.completion').setup({
@@ -26,7 +25,16 @@ require('mini.completion').setup({
 require('mini.align').setup()
 require('mini.notify').setup()
 require('mini.basics').setup()
-require('mini.diff').setup()
+require('mini.diff').setup({
+	view = {
+		style = 'sign',
+		signs = {
+			add = '+',
+			change = '~',
+			delete = '-'
+		}
+	}
+})
 require('mini.git').setup()
 require('mini.surround').setup()
 require('markdown').setup()
@@ -106,6 +114,11 @@ vim.o.scrolloff      = 10
 vim.o.confirm        = true
 vim.o.mouse          = ''
 vim.o.foldlevelstart = 99
+
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
 
 -- Lsp configuration
 vim.lsp.config('lua_ls', {
