@@ -6,14 +6,7 @@
 ;
 [init]
 	defaultBranch = main
-[diff]
-	external = difft
-	tool   = difftastic
-[difftool]
-	prompt = false
 
-[difftool "difftastic"]
-	cmd = difft "$MERGED" "$LOCAL" "abcdef1" "100644" "$REMOTE" "abcdef2" "100644"
 [credential "https://git-codecommit.eu-central-1.amazonaws.com"]
 	provider = generic
 [credential]
