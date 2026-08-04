@@ -60,4 +60,3 @@ fi
 export JAVA_TOOL_OPTIONS="-Djavax.net.ssl.trustStore=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home/lib/security/cacerts"
 
 eval "$(mise activate zsh)"
-eval "$(fnm env --use-on-cd --shell zsh)"
