@@ -1,39 +1,56 @@
 {
   "plugins": {
     "alabaster.nvim": {
-      "rev": "80dda0473b2c7e28d8f6cdba621afbe4c0a847db",
+      "rev": "cf5f78b24977da98b927132d054fd4589495e746",
       "src": "https://github.com/mcncl/alabaster.nvim"
     },
     "bullets.vim": {
-      "rev": "89294b8930e660936374fb763ac48a1ac51dd29c",
+      "rev": "81570b98ca44b4100b3ddcf8d9ca74b9a9b0c884",
       "src": "https://github.com/bullets-vim/bullets.vim"
+    },
+    "conform.nvim": {
+      "rev": "016802de402556da54c36bd7359b441266b01cdd",
+      "src": "https://github.com/stevearc/conform.nvim.git"
     },
     "markdown.nvim": {
       "rev": "093be911d90de03877f3009de36081c1a6242d51",
       "src": "https://github.com/tadmccorkle/markdown.nvim"
     },
+    "mason-lspconfig.nvim": {
+      "rev": "5d32a9b8de9f90466797a740edb0fb4b3c27e423",
+      "src": "https://github.com/mason-org/mason-lspconfig.nvim"
+    },
+    "mason-tool-installer.nvim": {
+      "rev": "443f1ef8b5e6bf47045cb2217b6f748a223cf7dc",
+      "src": "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim"
+    },
+    "mason.nvim": {
+      "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
     "mini.nvim": {
-      "rev": "3b1b65e1e14cd0bf7b4178b38750f4a733e9d4e0",
-      "src": "https://github.com/nvim-mini/mini.nvim",
-      "version": "'stable'"
+      "rev": "1345d191bb3da9c7b0e977f4387c5761f9bff68d",
+      "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "nvim-lspconfig": {
-      "rev": "97774019cb17697f35872b28bc020a72b4ca1b51",
-      "src": "https://github.com/neovim/nvim-lspconfig",
-      "version": "'v2.7.0'"
+      "rev": "da1aff0332774a0f60d52bf972e815dfc226f276",
+      "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
-      "rev": "6620ae1c44dfa8623b22d0cbf873a9e8d073b849",
+      "rev": "5cb0114e6242625db56dd6440e945ed1ece10bc7",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "oil.nvim": {
-      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
-      "src": "https://github.com/stevearc/oil.nvim.git",
-      "version": "'v2.15.0'"
+      "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
+      "src": "https://github.com/stevearc/oil.nvim.git"
     },
-    "true-zen.nvim": {
-      "rev": "2b9e210e0d1a735e1fa85ec22190115dffd963aa",
-      "src": "https://github.com/pocco81/true-zen.nvim"
+    "pi.nvim": {
+      "rev": "0f9f015433404da949c2e8388842c1449e88f793",
+      "src": "https://github.com/alex35mil/pi.nvim"
+    },
+    "vim-sleuth": {
+      "rev": "be69bff86754b1aa5adcbb527d7fcd1635a84080",
+      "src": "https://github.com/tpope/vim-sleuth.git"
     },
     "zen-mode.nvim": {
       "rev": "8564ce6d29ec7554eb9df578efa882d33b3c23a7",
